@@ -37,7 +37,7 @@ public class TwitterHandler {
         timer = new Timer();
         TimerTask task = new TweetTimer(asyncTwitter, this);
 
-        timer.scheduleAtFixedRate(task, 0, TimeUnit.MINUTES.toMillis(2));
+        timer.scheduleAtFixedRate(task, 0, TimeUnit.HOURS.toMillis(2));
 
     }
 
